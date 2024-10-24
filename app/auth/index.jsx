@@ -9,7 +9,7 @@ const Stack = createNativeStackNavigator();
 
 function AuthStack() {
     return (
-      <Stack.Navigator  initialRouteName="">
+      <Stack.Navigator  initialRouteName="Welcome">
          <Stack.Screen name="Welcome" component={Welcome} options={{
             headerShown: false,
           }}/>
@@ -21,16 +21,14 @@ function AuthStack() {
   }
   function Navigation() {
     return (
-      <NavigationContainer>
+      // <NavigationContainer>
         <AuthStack />
-      </NavigationContainer>
+      /* </NavigationContainer> */
     );
   }
 export default function Auth() {
     return (
         <>
-          
-    
           <Navigation />
         </>
       );
