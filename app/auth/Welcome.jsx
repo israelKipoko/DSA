@@ -9,10 +9,14 @@ export default function Welcome() {
     const navigation = useNavigation();
     return (
         <SafeAreaView className="h-full flex-1">
-            <View className="px-3">
-                <Text className="text-red-600">Logo</Text>
-                <View className="border border-cyan-900 h-9 w-9 bg-cyan-400"></View>
-            </View>
+            <ScrollView className=" "
+            contentContainerStyle={{
+                height: "100%",}}>
+                <View className="px-3">
+                    <Text className="text-red-600">Logo</Text>
+                    <View className="border border-cyan-900 h-9 w-9 bg-cyan-400"></View>
+                </View>
+            </ScrollView>
         </SafeAreaView>
     )
 }

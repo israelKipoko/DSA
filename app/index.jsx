@@ -4,9 +4,20 @@ import Auth from './auth/index';
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import { NavigationContainer } from '@react-navigation/native';
 
+function Navigation() {
+  return (
+    <>
+   <Auth />
+   </>
+  );
+}
 export default function index() {
     return (
-      <Auth />
+      <>
+      <StatusBar style="light" />
+
+      <Navigation />
+    </>
       );
 }
 
