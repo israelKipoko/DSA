@@ -55,6 +55,7 @@ const FloatingLabelInput = ({ label, ...props }) => {
         onBlur={handleBlur}
         onChangeText={(text) => setValue(text)}
         value={value}
+        placeholderTextColor="#ffffff" // Placeholder color
       />
     </View>
   );
@@ -63,15 +64,19 @@ const FloatingLabelInput = ({ label, ...props }) => {
 const styles = StyleSheet.create({
   container: {
     paddingTop: 18,
-    marginTop: 20,
-    marginBottom: 20,
+    marginTop: 5,
+    marginBottom: 5,
   },
   input: {
-    height: 40,
-    borderBottomWidth: 1,
-    borderBottomColor: '#000',
+    height: 50,
+    width: 300,
+    // borderBottomWidth: 1,
+    // borderBottomColor: '#000',
+    borderRadius: 8,
     fontSize: 16,
-    color: '#000',
+    color: '#ffffff', //input text color
+    backgroundColor: '#395886',
+    paddingHorizontal: 12
   },
 });
 
